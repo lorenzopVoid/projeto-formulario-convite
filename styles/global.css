@@ -36,3 +36,17 @@ body {
   color: var(--text-body);
   background-color: var(--shape-background);
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Leckerli One", cursive;
+  font-weight: 400;
+  color: #FF598B;
+  margin-bottom: .25rem;
+  line-height: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

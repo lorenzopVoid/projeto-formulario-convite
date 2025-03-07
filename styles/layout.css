@@ -1,6 +1,6 @@
 #app {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 75%;
 
   height: 100vh;
   overflow: hidden;
@@ -11,10 +11,23 @@
 aside {
   padding: 1.25rem;
   background-color: var(--shape-body);
+  background: url(../assets/Background.svg) no-repeat center/cover;
   border-radius: .75rem;
 
   .aside-container {
     max-width: 25rem;
+    padding: 2rem;
+    width: 100%;
+
+    img {
+      width: 2.8rem;
+      height: 3rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      font-weight: 300;
+    }
   }
 }
 
@@ -27,5 +40,6 @@ main {
   .main-container {
     max-width: 51.25rem;
     margin-right: auto;
+    padding: 5rem;
   }
 }
