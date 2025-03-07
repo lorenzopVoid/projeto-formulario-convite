@@ -1,0 +1,31 @@
+#app {
+  display: grid;
+  grid-template-columns: 30% 70%;
+
+  height: 100vh;
+  overflow: hidden;
+  padding: 1.25rem;
+  gap: 1.25rem;
+}
+
+aside {
+  padding: 1.25rem;
+  background-color: var(--shape-body);
+  border-radius: .75rem;
+
+  .aside-container {
+    max-width: 25rem;
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 1.25rem;
+  background-color: var(--shape-body);
+  border-radius: .75rem;
+
+  .main-container {
+    max-width: 51.25rem;
+    margin-right: auto;
+  }
+}

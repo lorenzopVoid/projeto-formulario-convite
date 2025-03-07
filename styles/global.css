@@ -29,3 +29,10 @@
   --input-stroke: #363B40;
   --input-placeholder: #869198;
 }
+
+body {
+  overflow: hidden;
+  font: var(--text);
+  color: var(--text-body);
+  background-color: var(--shape-background);
+}
