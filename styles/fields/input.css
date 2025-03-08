@@ -1,0 +1,53 @@
+input, textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  height: 3rem;
+
+  padding: 0 1rem;
+  font: var(--text);
+  border: 1px solid var(--input-stroke);
+  background: var(--input-base);
+  color: var(--text-body);
+}
+
+label {
+  font: var(--text-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: .75rem;
+}
+
+input:focus, textarea:focus, input[type="datetime-local"]:focus-within {
+  outline: none;
+  border: .06rem solid var(--brand-light);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+input:hover, textarea:hover {
+  border: 1px solid var(--brand-light);
+}
+
+input[type="datetime-local"] {
+  position: relative;
+  color: var(--input-placeholder);
+  width: 100%;
+  &::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 1rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+

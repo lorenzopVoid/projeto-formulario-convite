@@ -39,7 +39,7 @@ main {
 
   .main-container {
     max-width: 51.25rem;
-    margin-right: auto;
+    margin: 0 auto;
     padding: 5rem;
   }
 }

@@ -7,7 +7,7 @@
 :root {
   --font-family: "Open Sans", sans-serif;
   --font-heading: "Baloo 2", sans-serif;
-  --text: 500 1rem/1.5 var(--font-family);
+  --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 .875rem/1.4 var(--font-family);
   --heading: 700 1.75rem/2 var(--font-heading);
   --heading-sm: 600 1.13rem/1.75 var(--font-heading);
@@ -53,4 +53,13 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-1 {
+  flex: 1;
 }
