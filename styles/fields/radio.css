@@ -32,6 +32,22 @@ margin-top: .75rem;
     background-color: var(--shape-button);
     outline: none;
 
+    label {
+      color: var(--text-heading);
+    }
+
+    & .radio-image {
+      background: url(../../assets/icons/building-blue.svg) no-repeat center/contain;
+    }
+
+    & .radio-image-1 {
+      background: url(../../assets/icons/video-2.svg) no-repeat center/contain;
+    }
+  }
+
+  &:has(:checked) {
+    background-color: var(--shape-button);
+
     & .radio-image {
       background: url(../../assets/icons/building-blue.svg) no-repeat center/contain;
     }

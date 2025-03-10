@@ -11,6 +11,12 @@ input, textarea {
   color: var(--text-body);
 }
 
+textarea {
+  height: 10.5rem;
+  overflow: hidden;
+  resize: none;
+}
+
 label {
   font: var(--text-sm);
   color: var(--text-body);
