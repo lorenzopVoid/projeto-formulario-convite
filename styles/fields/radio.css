@@ -77,6 +77,130 @@ margin-top: .75rem;
   }
 }
 
+.color-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.color-inner {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-width: 2.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--shape-button);
+  padding: .375rem;
+  
+  input, input:focus, input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  label {
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: 50%;
+    margin-bottom: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}
+
+.color-inner:hover {
+  outline: .125rem solid var(--brand-light);
+}
+
+.color-inner:has(:checked) {
+  outline: .125rem solid var(--brand-light);
+}
+
+#blue-color + label {
+  background-color: var(--brand-light);
+}
+#navy-color + label {
+  background-color: #6A59FF;
+}
+#purple-color + label {
+  background-color: #B259FF;
+}
+#fuschia-color + label {
+  background-color: #FF59F9;
+}
+#pink-color + label {
+  background-color: #FF598B;
+}
+#danger-color + label {
+  background-color: var(--semantic-error);
+}
+#orange-color + label {
+  background-color: #FF8B59;
+}
+#yellow-color + label {
+  background-color: #FFCD59;
+}
+#lime-color + label {
+  background-color: #E1FF59;
+}
+#green-color + label {
+  background-color: #59FF91;
+}
+#cyan-color + label {
+  background-color: #59FFF9;
+}
+
+.theme-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.4rem, 1fr));
+  gap: .5rem;
+}
+
+.theme-inner {
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  display: grid;
+  justify-items: center;
+  padding: .25rem .25rem .5rem .25rem;
+  position: relative;
+  background-color: var(--shape-button);
+
+  input, input:focus, input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  label {
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: var(--text-heading);
+  }
+
+  &:hover, &:focus-within {
+    outline: 2px solid var(--brand-light);
+  }
+
+  &:has(:checked) {
+    outline: 2px solid var(--brand-light);
+  }
+
+}
+
 
 
 
