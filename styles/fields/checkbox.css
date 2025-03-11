@@ -1,0 +1,55 @@
+.style-wrapper {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+
+.style-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  gap: .75rem;
+
+  input, input:focus, input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    color: var(--text-heading);
+
+    .style-image {
+      background: url(../../assets/icons/dark.svg) no-repeat center/contain;
+      width: 4rem;
+      height: 2rem;
+    }
+    
+    .light {
+      display: none;
+    }
+  }
+
+  &:has(:checked) {
+    label {
+      .style-image {
+        background: url(../../assets/icons/light.svg) no-repeat center/contain;
+      }
+      .dark {
+        display: none;
+      }
+      .light {
+        display: flex;
+      }
+    }
+  }
+}
