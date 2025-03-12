@@ -24,3 +24,38 @@ fieldset + fieldset {
   padding-top: 2.5rem;
   border-top: 1px solid var(--input-stroke);
 }
+
+.action-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: end;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+
+    appearance: none;
+    border: none;
+    background-color: var(--brand-dark);
+    color: var(--text-heading);
+    padding: .25rem 1.25rem;
+    border-radius: .5rem;
+    gap: .75rem;
+
+    font-size: 1rem;
+    font-weight: 500;
+
+    .btn-image {
+      background-image: url(../assets/icons/ticket.svg);
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+
+    &:hover, &:focus-within {
+      background-color: var(--brand-mid);
+    }
+  }
+
+}
