@@ -18,3 +18,9 @@ legend {
 fieldset + fieldset {
   margin-top: 3rem;
 }
+
+.terms-wrapper {
+  margin-top: 3rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--input-stroke);
+}
