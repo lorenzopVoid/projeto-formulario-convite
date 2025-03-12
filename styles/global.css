@@ -9,6 +9,7 @@
   --font-heading: "Baloo 2", sans-serif;
   --text: 400 1rem/1.5 var(--font-family);
   --text-sm: 400 .875rem/1.4 var(--font-family);
+  --text-xs: 400 .75rem/1.4 var(--font-family);
   --heading: 700 1.75rem/2 var(--font-heading);
   --heading-sm: 600 1.13rem/1.75 var(--font-heading);
 

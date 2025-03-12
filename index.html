@@ -244,8 +244,33 @@
                   </label>
                   <p>Nenhum arquivo selecionado</p>
                 </div>
+              </div>
+            </div>
+          </fieldset>
 
+          <fieldset class="contact">
+            <legend>
+              <img src="assets/icons/contact.svg" alt="ícone de contato">
+              Dados para contato
+            </legend>
 
+            <div class="input-wrapper">
+              <label for="name">Nome</label>
+              <input type="text" name="name" id="name" placeholder="Nome completo" required>
+              <div class="error">
+                <img src="./assets/icons/circle-alert.svg" alt="ícone de alerta vermelho">
+                <span>Campo obrigatório</span>
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper flex-1">
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" id="mail" placeholder="exemplo@email.com">
+              </div>
+              <div class="input-wrapper flex-1">
+                <label for="tel">Telefone</label>
+                <input type="tel" name="tel" id="tel" placeholder="(99) 9 9999-9999">
               </div>
             </div>
           </fieldset>

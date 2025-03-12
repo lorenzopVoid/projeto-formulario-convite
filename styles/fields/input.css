@@ -56,4 +56,23 @@ input[type="datetime-local"] {
   }
 }
 
+input {
+
+  &:invalid {
+    border: 1px solid var(--semantic-error);
+  }
+
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font: var(--text-xs);
+    color: var(--semantic-error);
+    margin-top: .5rem;
+  }
+
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+}
 
